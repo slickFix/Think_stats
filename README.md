@@ -1,2 +1,3 @@
 # Think_stats
-Using Python to understand statistics
+
+This repository uses the code and probability concepts mentioned in this [book](http://greenteapress.com/thinkstats/thinkstats.pdf)
