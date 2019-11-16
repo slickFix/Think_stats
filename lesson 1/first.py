@@ -98,7 +98,7 @@ def Summarize(data_dir):
     print('Difference in days', (mu1 - mu2) * 7.0)
 
 
-def main(name, data_dir='.'):
+def main(name, data_dir='../dataset'):
     Summarize(data_dir)
     
 
