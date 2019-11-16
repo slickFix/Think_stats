@@ -184,14 +184,14 @@ class Pregnancies(Table):
                 pass
 
 
-def main(name, data_dir='.'):
+def main(name, data_dir='../dataset'):
     resp = Respondents()
     resp.ReadRecords(data_dir)
-    print 'Number of respondents', len(resp.records)
+    print('Number of respondents', len(resp.records))
 
     preg = Pregnancies()
     preg.ReadRecords(data_dir)
-    print 'Number of pregnancies', len(preg.records)
+    print('Number of pregnancies', len(preg.records))
 
     
 if __name__ == '__main__':
