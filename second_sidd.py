@@ -1,14 +1,10 @@
-import sys
-
-sys.path.append("../lesson 1")
-
 import survey
 import numpy as np
 
 
 # Exercise 2.2
 table = survey.Pregnancies()
-table.ReadRecords(data_dir='../dataset')
+table.ReadRecords(data_dir='./dataset')
 first_birth_time = []
 other_birth_time = []
 for record in table.records:

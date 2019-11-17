@@ -3,7 +3,7 @@ import numpy as np
 
 # Exercise 1.3.1
 table = survey.Pregnancies()
-table.ReadRecords(data_dir='../dataset')
+table.ReadRecords(data_dir='./dataset')
 print('Number of pregnancies', len(table))
 
 # Exercise 1.3.2
