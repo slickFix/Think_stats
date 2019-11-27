@@ -33,23 +33,23 @@ def CleanLine(line):
     t = line.split()
     if len(t) < 6:
         return None
-    
+
     place, divtot, div, gun, net, pace = t[0:6]
 
-    if not '/' in divtot:
+    if not '/' in divtot.decode('ascii'):
         return None
 
     for time in [gun, net, pace]:
-        if ':' not in time:
+        if ':' not in time.decode('ascii'):
             return None
 
-    return place, divtot, div, gun, net, pace
+    return place.decode('ascii'), divtot.decode('ascii'), div.decode('ascii'), gun.decode('ascii'), net.decode('ascii'), pace.decode('ascii')
 
 
 def ReadResults(url=results):
     """Read results from coolrunning and return a list of tuples."""
     results = []
-    conn = urllib.urlopen(url)
+    conn = urllib.request.urlopen(url)
     for line in conn.fp:
         t = CleanLine(line)
         if t:
