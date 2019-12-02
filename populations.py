@@ -24,8 +24,7 @@ def ReadData(filename='populations.csv'):
     try:
         fp = open(filename)
     except IOError:
-        print 'Did not find populations.csv.  You can download'
-        print 'it from http://thinkstats.com/populations.csv'
+        print('Did not find populations.csv.  You can download it from http://thinkstats.com/populations.csv')
         return []
 
     reader = csv.reader(fp)
