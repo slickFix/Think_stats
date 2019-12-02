@@ -71,11 +71,10 @@ def MakeNormalPlot(ys, root=None, line_options={}, **options):
 
 def main():
     means = EstimateRankits(84)
-    print means
+    print(means)
     
 
 if __name__ == "__main__":
     main()
 
 
-    
